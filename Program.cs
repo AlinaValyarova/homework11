@@ -66,7 +66,13 @@ namespace eleventh_homework
 
         static void Main(string[] args)
         {
+            ex2();
+        }
+
+        static void ex1()
+        {
             string path = @"students.txt";
+            string path2 = @"events.txt";
             Random rnd = new Random();
             List<Student> students = new List<Student>();
             ReadFile(path, students);
@@ -92,21 +98,43 @@ namespace eleventh_homework
             }
             int ind = 0;
             Probability(vers);
+            string txt = $"Name of event: {name} Date: {date} Students: ";
             for (int i = 0; i < num; i++)
             {
                 Student stu = new Student();
                 GetRNDIndex(rnd, vers, ind);
                 stu = students[ind];
-                Console.WriteLine("Student {0}: ", i);
+                Console.WriteLine("Student {0}: ", i + 1);
                 Console.WriteLine($"Name: {stu.name}  \nNumber of group: {stu.group}");
                 students.RemoveAt(ind);
                 DeleteFromFile($"{stu.name} {stu.group} {stu.count} ", path);
-                AddTofile(path,$"{stu.name} {stu.group} {stu.count += 1}");
+                AddTofile(path, $"{stu.name} {stu.group} {stu.count += 1}");
+                txt += $"{stu.name} {stu.group} ";
             }
+            AddTofile(path2, txt);
+        }
 
+        static void ex2()
+        {
+            List<Students2> students = new List<Students2>();
+            Students2 Adel = new Students2();
+            Adel.name = "Adel";
+            Adel.hobby = "figure skating";
+            students.Add(Adel);
+            Students2 Leon = new Students2();
+            Leon.name = "Leon";
+            Leon.hobby = "reading";
+            students.Add(Leon);
+            Students2 Daniya = new Students2();
+            Daniya.name = "Daniya";
+            Daniya.hobby = "cinematography";
+            students.Add(Daniya);
+            Console.WriteLine("Enter a hobby");
+            string hobby = Console.ReadLine();
+            Students2.React(students, hobby);
 
         }
 
-        
+
     }
 }
