@@ -116,22 +116,27 @@ namespace eleventh_homework
 
         static void ex2()
         {
-            List<Students2> students = new List<Students2>();
-            Students2 Adel = new Students2();
+            List<People> students = new List<People>();
+            People Adel = new People();
             Adel.name = "Adel";
             Adel.hobby = "figure skating";
             students.Add(Adel);
-            Students2 Leon = new Students2();
+
+            People Leon = new People();
             Leon.name = "Leon";
             Leon.hobby = "reading";
             students.Add(Leon);
-            Students2 Daniya = new Students2();
+            People Daniya = new People();
             Daniya.name = "Daniya";
             Daniya.hobby = "cinematography";
             students.Add(Daniya);
+            Adel.reacted += People.DisplayMessage;
+            Daniya.reacted += People.DisplayMessage;
+            Leon.reacted += People.DisplayMessage;
             Console.WriteLine("Enter a hobby");
             string hobby = Console.ReadLine();
-            Students2.React(students, hobby);
+            People.React(students, hobby);
+
 
         }
 

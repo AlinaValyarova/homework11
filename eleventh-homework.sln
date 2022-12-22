@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.32901.82
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "homework11", "homework11.csproj", "{097E5AAD-9E1E-4B76-8998-4632C460321D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tumakov", "..\Tumakov\Tumakov.csproj", "{B8AC0146-C7F3-4498-B555-4507457F0F43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tumakov11", "..\Tumakov\Tumakov11.csproj", "{B8AC0146-C7F3-4498-B555-4507457F0F43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tumakov12", "..\Tumakov12\Tumakov12.csproj", "{5B2B78D7-AABE-4005-A330-1CF433E36732}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{B8AC0146-C7F3-4498-B555-4507457F0F43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8AC0146-C7F3-4498-B555-4507457F0F43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8AC0146-C7F3-4498-B555-4507457F0F43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B2B78D7-AABE-4005-A330-1CF433E36732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B2B78D7-AABE-4005-A330-1CF433E36732}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B2B78D7-AABE-4005-A330-1CF433E36732}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B2B78D7-AABE-4005-A330-1CF433E36732}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
